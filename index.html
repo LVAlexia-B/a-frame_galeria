@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+
+  </head>
+  <body>
+   <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" fog="color: #26524c; far: 112.00000000000001">
+    <a-assets>
+
+    <img id="ojo" src="assets/ojo.jpeg">
+    <img id="dientes" src="assets/dientes.jpeg">
+    <img id="sangre" src="assets/sangre.jpeg">
+    <img id="tumor" src="assets/tumor.jpeg">
+    <img id="tumores" src="assets/tumores.jpeg">
+    <a-asset-item id="pedestal" src="assets/pedestal.glb"></a-asset-item>
+    
+    </a-assets>
+      <a-gltf-model src="pedestal" scale="20 20 20" gltf-model="pedestal"></a-gltf-model>
+      <a-image src="#ojo" position="13.83377 1.84062 4.25443" rotation="0 70 0" scale="3.5 3.5 3.5"></a-image>
+      <a-image src="#dientes" position="-11.67207 1.89438 6.45973" rotation="0 119.99999999999999 0" scale="3 3.5 1"></a-image>
+      <a-image src="#sangre" position="-4.56902 1.73241 -16.11605" scale="3.5 3.5 3.5" rotation="0 15.504810894035208 0"></a-image>
+      <a-image src="#tumor" position="3.58091 1.89424 14.89177" scale="3.5 3.5 1" rotation="0 20 0"></a-image>
+      <a-image src="#tumores" position="14.16864 1.86556 -15.47448" rotation="0 -38.64199257700811 0" scale="3.5 3.5 1"></a-image>
+
+      <a-entity environment="preset: goaland; position: 1.73302 0 0; skyType: gradient; skyColor: #000000; horizonColor: #214230"></a-entity>
+
+      <a-cylinder position="13.73606 0 4.25586" radius="0.3" height="1.5" color="#621E28" geometry="height: 0.15; radius: 1.5"></a-cylinder>
+      <a-cylinder position="-4.4299 0 -16.19458" radius="0.3" height="1.5" color="#621E28" geometry="height: 0.15; radius: 1.5"></a-cylinder>
+      <a-cylinder position="-11.73213 0 6.40837" radius="0.3" height="1.5" color="#621E28" geometry="height: 0.15; radius: 1.5"></a-cylinder>
+      <a-cylinder position="14.1632 0 -15.72324" radius="0.3" height="1.5" color="#621E28" geometry="height: 0.15; radius: 1.5"></a-cylinder>
+      <a-cylinder position="3.80057 0.02686 14.93242" radius="0.3" height="1.5" color="#621E28" geometry="height: 0.15; radius: 1.5"></a-cylinder>
+    
+    </a-scene>
+  </body>
+</html>
+
